@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import api from '../services/api';
-import axios from 'axios';
-
-const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 const PLAN_META = {
     free: { color: 'border-slate-200 bg-white', btn: 'bg-slate-900 hover:bg-slate-700 text-white', badge: null },
